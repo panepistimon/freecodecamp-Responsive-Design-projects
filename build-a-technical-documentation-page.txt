@@ -1,0 +1,215 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <!-- Setting up my vavigation bar -->
+    <nav id="navbar">
+      <header id="navhead">Py Docs</header>
+      <ul>
+          <li><a href="#Python_Introduction" class="nav-link">Python Introduction</a>
+          </li>
+          <li><a href="#Variables" class="nav-link">Variables</a></li>
+          <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+          <li><a href="#Booleans" class="nav-link">Booleans</a></li>
+          <li><a href="#Functions" class="nav-link">Functions</a></li>
+          <li><a href="#Classes" class="nav-link">Classes</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+      <!-- Intro -->
+      <section class="main-section" id="Python_Introduction">
+        <header>Python Introduction</header>
+        <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.
+Python is a programming language that lets you work quickly and integrate systems more efficiently.</p>
+        <p>There are two major Python versions: Python 2 and Python 3. Both are quite different.</p>
+      </section>
+
+      <!-- Variables -->
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <code><p>x = 5</p>
+              <p>y = "John"</p>
+              <p>print(x)</p>
+              <p>print(y)</p></code>
+      </section>
+
+
+      <!-- Data types-->
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things. Python has the following data types built-in by default, in these categories:</p>
+        <ul>
+          <li>Text Type:	str</li>
+          <li>Numeric Types:	int, float, complex</li>
+          <li>Sequence Types:	list, tuple, range</li>
+          <li>Mapping Type:	dict</li>
+          <li>Set Types:	set, frozenset</li>
+          <li>Boolean Type:	bool</li>
+        </ul>
+        <p>You can get the data type of any object by using the type() function:</p>
+        <code>
+          <p>x=5</p>
+          <p>print(type(x))</p>
+        </code>
+      </section>
+
+      <!-- Booleans -->
+
+      <section class="main-section" id="Booleans">
+        <header>Booleans</header>
+        <p>In programming you often need to know if an expression is True or False. You can evaluate any expression in Python, and get one of two answers, True or False.</p>
+        <p>Print a message based on whether the condition is True or False:</p>
+        <code><p>if b > a:</p>
+              <p>print("b is greater than a")</p></code>
+      </section>
+
+      <!-- Functions -->
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+        <p>In Python a function is defined using the def keyword:</p>
+        <code>
+          <p>def my_function():</p>
+          <p>print("Hello from a function")</p>
+        </code>
+      </section>
+
+      <!-- Classes -->
+
+      <section class="main-section" id="Classes">
+        <header>Classes</header>
+        <p>Python is an object oriented programming language. Almost everything in Python is an object, with its properties and methods. A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+        <p>To create a class, use the keyword class:</p>
+        <code>
+          <p>class MyClass:</p>
+          <p>x = 5</p>
+        </code>
+      </section>
+     
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+* {
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color:#CBCBCB;
+  color:2D2821;
+  font-family: "Courier New", sans-serif;
+}
+
+#navbar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #CBCBCB;
+  position: fixed; 
+  overflow: auto; 
+  z-index:1;
+  display: block;
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+#navbar > ul > li {
+  height:65px;
+  text-align: center;
+  padding:15px;
+  margin:0;
+  
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-color:black;
+  border-bottom: 2px solid;
+
+}
+li a.active {
+  background-color: #555;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;}
+
+#navhead {
+  color: black;
+    margin: 10px;
+    text-align: left;
+    font-size: 1.6em;
+    font-weight: bold;
+    display: block;
+}
+ #navbar li {
+   color: #4d4e53;
+    list-style: none;
+    position: relative;
+    width: 100%;
+ }
+
+ li {
+    display: list-item;
+    text-align:-webkit-match-parent;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;}
+
+.main-section > header {
+  font-size:20px;
+  font-weight:bold;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 0;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+.main-section > ul > li{
+  padding: 2px;
+  
+}
+
+** end of undefined **
+

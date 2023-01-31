@@ -1,0 +1,100 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title"> MyFitnessApp Survey Form </h1>
+  <p id="description">Thank you for helping us improve the application </p>
+  <form id="survey-form" methond="POST" action="https://register-demo.freecodecamp.org">
+    <label id="name-label" for="name">Name <input type="text" id="name" name="name" placeholder="Whats your name?" required></label>
+    <label id="email-label" for="email">Email <input type="email" id="email" name="email" pattern="[a-z0-5]{8,}" placeholder="Whats your email?"  required></label>
+    <label id="number-label" for="number">Number <input type="number" id="number" name="number" min = 10  max = 100000 placeholder="phone num"  required></label>
+     <label>How was the application?
+       <select id="dropdown">
+         <option>Pick one </option>
+         <option>Bad </option>
+         <option>Medium </option>
+         <option>Excellent </option>
+         </select></label>
+      <label>How often do you use the application?
+      <label for="rarely"><input type="radio" name="use" value="rare" class="inline">Rarely </label>
+      <label for="often"><input type="radio" name="use" class="inline"value="often">Often(2-3 times per week) </label>
+      <label for="very_often"><input type="radio" name="use" value="daily" class="inline">Every day </label></label>
+      <label> What shall we improve?
+        <label><input type="checkbox" value="1" class="inline"> Calorie Counting Options</label>
+        <label><input type="checkbox" value="2" class="inline"> Exercise Variety</label>
+        <label><input type="checkbox" value="3" class="inline"> Meal Recipes</label>
+        <label><input type="checkbox" value="4" class="inline" > Personalization </label>
+        <label><input type="checkbox" value="5" class="inline"> Other </label>
+      </label>
+     <label>Any additional comment?<textarea id="more" name="more" rows="10" cols="50" placeholder="Please share your feedback"></textarea></label>
+    <input id="submit" type="submit" value="Submit" />
+
+  
+  
+  
+  
+  </form>
+</body>
+
+** end of undefined **
+
+** start of undefined **
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  font-family:Tahoma;
+}
+h1 {
+	text-align: center;
+	font-size: 35px;
+	margin-top: 50px;
+}
+#description {
+	text-align: center;
+	font-size: 20px;
+}
+#survey-form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+input,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #1E90FF;
+  border-color: #20B2AA;
+  min-width: 300px;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+
+** end of undefined **
+
